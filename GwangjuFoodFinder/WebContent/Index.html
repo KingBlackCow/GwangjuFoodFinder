@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gwangju SSAFY</title>
+ 	<link href="css/myCSS.css" rel="stylesheet" type="text/css" />
+ 	<script src="./js/showContents.js"></script>
+ 	<script src="./js/myjs.js"></script>
+<script>
+  function alertEX() {
+  alert("None");
+}
+</script>
+
+<script>
+  function alertthis() {
+  alert("None");
+}
+
+
+</script>
+ <script type="text/javascript">
+		var imgArray=new Array();
+		imgArray[0]="img/duck1.jpg"; 
+		imgArray[1]="img/duck2.jpg"; 
+		imgArray[2]="img/duck3.jpg"; 
+		
+		
+		function showImage(i)
+		{ 
+			var imgNum=i; 
+			var objImg=document.getElementById("duck");
+		 	objImg.src=imgArray[imgNum];
+		 	i++;
+		 	if(i>=3){
+		 		i=0; 
+		 	}
+		 	setTimeout(showImage,1700,i);
+		 	
+		} 
+ </script> 
+</head>
+
+<body style="background-color: black;">
+ <div id="fixed"><a href="#header"><img src="img/up.png" width="40" height="auto" ></div>
+  
+
+  <header id="header">
+    <div class="back" style="padding-bottom: 10px;">
+        <center>
+    <label>
+      <a href="Index.html">
+
+        <div class="multiEffect"><h1 style="font-family: Georgia; font-style:italic; display:inline-block;position:relative; left: 0px;top:30px;">Gwangju Food Finder</h1></div>
+             <div style="display:inline-block; position: relative;top:1px; "><h4><span class="light"style="font-family: Georgia;font-style:italic;">Enjoy your Food</span></h4></div>
+       </a>
+    </label>
+    </center>
+    <a href="https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp"/kr/index.jsp ><img src="img/ssafy.png" width="100px" height="auto"style="display:inline-block; position: absolute;left:10px; top: 5px;"></a>
+    </div>
+   
+  </header>
+  
+
+  <nav id="menu">
+
+    <div class="menu">
+
+           <ul>
+         
+           
+            <li ><a href="#">한식</a>
+            <ul>
+                <li><a href="#duck">영미오리탕</a></li>
+                <li><a href="#img2">송정떡갈비</a></li>
+              
+                
+           </ul>
+            </li>
+
+            <li ><a href="#">양식</a>
+            <ul>
+                <li><a href="img3">올웨이즈헝그리</a></li>
+                <li><a href="#">더 퍼스트 앨리웨이</a></li>
+                <li><a href="#">르시엘 블루</a></li>
+                <li><a href="#">카페바리에</a></li>
+                <li><a href="#">밀밭양조장</a></li>
+            </ul>
+            </li>
+
+            <li ><a href="#">중식</a>
+            <ul>
+                <li><a href="#">수자타</a></li>
+                <li><a href="#">하고스</a></li>
+               
+            </ul>
+            </li>
+         </ul> 
+
+    </div>
+
+
+  </nav>
+
+
+
+
+  
+  
+<section id="container" style="padding:60px;">
+  <center><p style="font-family: Georgia; color:white;"><span>Food List</span></p></center>
+<ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+        <div class="slide">
+            <a href="#gogi"><img src="img/Gogi.jpg" /></a>
+        </div>
+        <div class="nav">
+            <label for="img-3" class="prev">&#x2039;</label>
+            <label for="img-2" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <a href="#duck"><img src="img/duck.jpg" /></a>
+        </div>
+        <div class="nav">
+            <label for="img-1" class="prev">&#x2039;</label>
+            <label for="img-3" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+          <a href="#hungry"><img src="img/always.jpg"/></a>
+        </div>
+        <div class="nav">
+            <label for="img-2" class="prev">&#x2039;</label>
+            <label for="img-1" class="next">&#x203a;</label>
+        </div>
+    </li>
+
+    
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+    </li>
+</ul>
+</section>
+
+
+<section>
+    <div id=main_contents >
+      <center>
+      <div style= "display:inline-block; padding-bottom: 30px;">
+        <div class ="information"></div>
+        <!-- <div id="duck">
+       	<iframe width="400" height="315" src="https://www.youtube.com/embed/l1t9XkT3DPo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.808800828415!2d126.90336691553803!3d35.16138888031878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718c66cc7ecb85%3A0x7523596fda534a0c!2z7JiB66-47Jik66as7YOV!5e0!3m2!1sko!2skr!4v1614770844395!5m2!1sko!2skr" width="400" height="315" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+         <body onload="showImage(0)" style="clear:both;">
+	  		<img id="duck" border="0" style=" width:400px; height:315px"> 
+  		</body>
+
+  		<div class="demo-02">
+  			주소: 광주광역시 북구 중앙동 경양로 126<br>
+  					 월요일	오전 11:30~오전 1:00<br>
+					 화요일	오전 11:30~오전 1:00<br>
+					 수요일	오전 11:30~오전 1:00 <br>
+					 목요일	오전 11:30~오전 1:00 <br>
+					 금요일	오전 11:30~오전 1:00<br>
+					 토요일	오전 11:30~오전 1:00<br>
+					 일요일	오전 11:30~오전 1:00<br>
+					
+					 연락처: 062-527-0249<br>
+  		</div>
+  		
+  		</div>
+  		
+  		<div id="gogi">
+       	<br>
+
+       	<iframe width="560" height="315" src="https://www.youtube.com/embed/ILHnfFO5E7o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+       	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.708859380674!2d126.79266591553727!3d35.13893828032423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357188650517e9dd%3A0x4a4dc28589eae20e!2z7Iah7KCV65ah6rCI67mEIDHtmLjsoJA!5e0!3m2!1sko!2skr!4v1614769798336!5m2!1sko!2skr" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+       	<h1 class="demo-02">transition-duration</h1>
+       	<div class="demo-02">
+  			주소: 광주광역시 광산구 송정동 광산로29번길 1<br>
+  					 월요일	오전 9:00~오후 10:00<br>
+					 화요일	오전 9:00~오후 10:00<br>
+					 수요일	오전 9:00~오후 10:00<br>
+					 목요일	오전 9:00~오후 10:00<br>
+					 금요일	오전 9:00~오후 10:00<br>
+					 토요일	오전 9:00~오후 10:00<br>
+					 일요일	휴무일<br>
+					
+			
+			 연락처: 062-944-1439<br>
+  		</div>		
+  		</div>
+       	<div id="hungry">
+       	<br>
+       	<iframe width="560" height="315" src="https://www.youtube.com/embed/Jp5CbrIk1Xo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+       	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.407109238099!2d126.91544051553693!3d35.121512880328545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718b0cb91bb7e5%3A0x5d3a2fe8101a2ade!2z7Jis7Juo7J207KaI7Zed6re466asKEFMV0FZU0hVTkdSWSk!5e0!3m2!1sko!2skr!4v1614769821545!5m2!1sko!2skr" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+       	<div class="demo-02">
+  			주소: 광주광역시 광산구 송정동 광산로29번길 1<br>
+  					 월요일	오전 9:00~오후 10:00<br>
+					 화요일	오전 9:00~오후 10:00<br>	
+			 		 수요일	오전 9:00~오후 10:00<br>
+					 목요일	오전 9:00~오후 10:00<br>
+					 금요일	오전 9:00~오후 10:00<br>
+					 토요일	오전 9:00~오후 10:00<br>
+					 일요일	휴무일<br>
+					 
+			
+			 연락처: 062-944-1439<br>
+  		</div>	
+  		</div>	
+       	<br> -->
+
+
+
+
+
+
+
+
+		<h2>Vote your Favorite</h2>
+          <div  id="main_link" style="display: inline-block; position: relative;top:30px; left: 40px;">
+            <table>
+              <thead>
+                  <tr><th></th><th style="font-family: Georgia"> </th><th></th></tr>
+              </thead>
+               <tbody>
+                  <tr><td id="btn1" onclick="btnclick('btn1')"> <img src="img/duck2.jpg" width="100%"height="100%" onmouseover="this.src='img/duck1.jpg'" onmouseout="this.src='img/duck2.jpg'">영미오리탕</td> 
+                  	<td id="btn2" onclick="btnclick('btn2')"><img src="img/Gogi.jpg" width="100%"height="100%"  onmouseover="this.src='img/Gogi.jpg'" onmouseout="this.src='img/Gogi.jpg'">송정떡갈비</td>
+                   	<td id="btn3" onclick="btnclick('btn3')"><img src="img/always.jpg" width="100%"height="100%"  onmouseover="this.src='img/always.jpg'" onmouseout="this.src='img/always.jpg'">올웨이즈헝그리</td></tr>
+              		<tr id=bg><td><span id="cnt1"></span></td>
+              		<td><span id="cnt2"></span></td>
+              		<td><span id="cnt3"></span></td>
+              		</tr>	
+              	</tbody>
+            </table>
+          </div>
+      </div>
+      
+	  
+    </center>
+    </div>
+    </section>
+
+
+
+  <footer>
+    <div class="back">
+      <div style="display: inline; padding-left: 10px;">
+        <a href="https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp" target="_blank"><img src="img/ssafy.png" width="120px" height="auto"></a>
+      </div>
+
+      <center>      
+        <div style="display: inline-block; position:relative;">
+          <h5 style="font-family: cursive; opacity: 0.5; font-color:white; color:white">Copyright (u) SSAFY All right reserved.</h5>
+        </div> 
+        
+        <div style="display: inline-block;font-family: cursive;position: relative; left: 15px; opacity: 0.5; color:white">
+          <h5>Developer Jiyoung Sim, Jiwon Jung, JS LEE</h5>
+        </div>
+        
+        <div style="display: inline-block;font-family: cursive;position: relative; left: 120px; opacity: 0.5; color:white">
+          <h5></h5>
+        </div>
+        
+      </center>
+
+     
+    </div>
+  </footer>
+</body>
+</html>

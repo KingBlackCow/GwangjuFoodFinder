@@ -1,0 +1,19 @@
+.blue {
+	background: #5abaE6;
+}
+.red {background: #d34e4e;}
+.green {background: #9dbb19;}
+.yellow {background: #f7b358;}
+
+.graph{
+	display: block;
+	margin: 10px 0;
+	color: #FFF;
+	font-size:20px;
+	line-height:1.8em;
+	text-align: center;
+	border-radius: 15px;
+	margin: 150px 50px;
+}
+
+body { background: #262626; }
